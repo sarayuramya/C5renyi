@@ -100,19 +100,15 @@ double alpha = -1.95;
 	double count[20];
 	int i=0;
 	double q= 1/(1-alpha); 
-	ForEach(v, MinVal, MaxVal)
-    	{
-	N = V[v];	
-	TotalCases += N;
-	}
+	
  	ForEach(v, MinVal, MaxVal)
     	{
 	N = V[v];
 	//Sum += N * Log(N);		 
         Sum += (pow((N/TotalCases),alpha));
-	//TotalCases += N;
+	TotalCases += N;
     	}
-	//Sum = Sum /TotalCases;
+	Sum = Sum /TotalCases;
 	Sum = Log(Sum)*q;	
     return Sum;
 }
