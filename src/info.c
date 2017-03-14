@@ -109,7 +109,7 @@ double alpha = -1.5;
 	TotalCases += N;
     	}
 	Sum = Sum /TotalCases;
-	Sum = log(Sum)*q;	
+	Sum = Log(Sum)*q;	
     return Sum;
 }
 
