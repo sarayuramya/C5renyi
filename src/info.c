@@ -105,11 +105,11 @@ double alpha = -1.95;
     	{
 	N = V[v];
 	//Sum += N * Log(N);		 
-        Sum += (pow((N/TotalCases),alpha));
+        Sum += (pow(N,alpha));
 	TotalCases += N;
     	}
 	Sum = Sum /TotalCases;
-	Sum = Log(Sum)*q;	
+	Sum = log(Sum)*q;	
     return Sum;
 }
 
