@@ -361,7 +361,7 @@ void PopCondition()
 /*	ruleset if it is sufficiently accurate				 */
 /*									 */
 /*************************************************************************/
-#define alpha 1.95
+#define alpha 4.50
 #define q 1/(1-alpha)
 #define TI(a,b)		((Log(pow((a+b),alpha))*q) -(Log(pow(a,alpha))*q) - (Log(pow(b,alpha))*q))
 
