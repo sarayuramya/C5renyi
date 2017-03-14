@@ -388,7 +388,7 @@ ForEach(c, 1, MaxClass)
 		count[i] = -1 * count[i];
 	}			
 	Entr = Entr /KnownCases;
-   	Entr = (Log(Entr)) *q;
+   	Entr = (log(Entr)) *q;
 	count[i] /= KnownCases;
 	Entr *= count[i];
 	
@@ -476,7 +476,7 @@ double q = 1/(1-alpha);
 		count[i] = -1 * count[i];
 	}
 	Entr = Entr /KnownCases;
-    	Entr =(Log(Entr))*q;
+    	Entr =(log(Entr))*q;
 	count[i] /= KnownCases;
 	Entr *= count[i];
 	
